@@ -1,0 +1,13 @@
+AULA 03: SOFTWARE DEVELOPMENT AND DESIGN
+
+Metódologias de design:
+WATERFALL (cascata)
+	#Vantagens
+	#Desvantagens
+ÁGILE
+	#Vantagens
+	#Desvantagens
+LEAN
+	#Vantagens
+	#Desvantagens
+
