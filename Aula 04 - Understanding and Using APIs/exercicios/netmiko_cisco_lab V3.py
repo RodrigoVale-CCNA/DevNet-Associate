@@ -4,11 +4,11 @@ from netmiko import ConnectHandler
 # Criação de dicionário com as informações de conexão
 device = {
     'device_type': 'cisco_ios',
-    'ip':'192.168.18.134', #IP do dispositivo dentro de EVE-NG(LOCAL)
-    'username':'devpython', #Usuário SSH criado localmente  
-    'password':'Python123!',#Senha do usuário SSH
+    'ip':'devnetsandboxiosxe.cisco.com', #IP do dispositivo dentro de EVE-NG(LOCAL)
+    'username':'admin', #Usuário SSH criado localmente  
+    'password':'C1sco12345',#Senha do usuário SSH
     'port':22, #Default SSH port
-    #'secret':'Python123!' #Senha de enable se necessário
+    #'secret':'C1sco12345' #Senha de enable se necessário
 }
 
 # Dicionário com as informações de interface loopback
@@ -39,6 +39,6 @@ output = connection.send_config_set(interface_config)
 connection.disconnect()
 
 #Imprimindo a saída
-print("Configuração aplicada com sucesso!")
 print(output)
+print("Configuração aplicada com sucesso!")
 

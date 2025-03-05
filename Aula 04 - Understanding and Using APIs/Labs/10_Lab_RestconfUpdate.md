@@ -38,7 +38,7 @@ PASS = 'lastorangerestoreball8876'
 # Interface to update
 TARGET_INTERFACE = "Loopback213"
 DESCRIPTION = "Change by RESTCONF"
-ENABLED = True
+ENABLED = true
 
 def main():
     # Constructing the payload
