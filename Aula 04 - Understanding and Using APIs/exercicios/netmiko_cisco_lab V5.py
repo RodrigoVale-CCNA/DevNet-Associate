@@ -1,3 +1,4 @@
+#Importando bibliotecas
 from netmiko import ConnectHandler
 
 # Criação de dicionário com as informações de conexão
@@ -10,21 +11,27 @@ device = {
     #'secret':'Python123!' #Senha de enable se necessário
 }
 
+# Dicionário com as informações de interface loopback
+loopback = {
+    "interface": "Loopback213",
+}
+# Lista de comandos para configuração da interface loopback
+interface_config = [
+    f"no interface {loopback['interface']}",
+ ]
+
 # Abrindo conexão com o dispositivo
 connection = ConnectHandler(**device)
 
 #EXEMPLO DE COMANDOS
 #command = 'show ip int brief'
 #command = 'show run'
-output = connection.send_command('show ip int brief',use_textfsm=True)
+output = connection.send_config_set(interface_config)
 
 #Fechando a conexão
 connection.disconnect()
 
-#Imprimindo a saída
-#print(output)
-for entry in output:
-    print(entry)
+print(output)
+print("A interface Loopback213 foi deletada com sucesso")
 
-
-
+#FIM
