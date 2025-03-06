@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network>
+  <router>
+    <id>R1</id>
+    <hostname>Router1</hostname>
+    <interfaces>
+      <interface>
+        <name>eth0</name>
+        <ip_address>192.168.1.1</ip_address>
+        <subnet_mask>255.255.255.0</subnet_mask>
+      </interface>
+      <interface>
+        <name>eth1</name>
+        <ip_address>192.168.2.1</ip_address>
+        <subnet_mask>255.255.255.0</subnet_mask>
+      </interface>
+    </interfaces>
+  </router>
+  <router>
+    <id>R2</id>
+    <hostname>Router2</hostname>
+    <interfaces>
+      <interface>
+        <name>eth0</name>
+        <ip_address>192.168.3.1</ip_address>
+        <subnet_mask>255.255.255.0</subnet_mask>
+      </interface>
+      <interface>
+        <name>eth1</name>
+        <ip_address>192.168.4.1</ip_address>
+        <subnet_mask>255.255.255.0</subnet_mask>
+      </interface>
+    </interfaces>
+  </router>
+</network>
